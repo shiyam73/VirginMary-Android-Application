@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  			  android:layout_width="fill_parent"
+  			  android:layout_height="fill_parent"
+  			  android:orientation="vertical"
+  			  android:background="@drawable/mary">
+  			  <RelativeLayout android:layout_width="wrap_content"
+  			  				  android:layout_height="50dip"
+  			  				  android:background="#000000">
+  			  				  
+  			  				  <ImageView android:id="@+id/top_virgin_history1"
+				  			  			 android:src="@drawable/peti"
+				  			  			 android:layout_width="wrap_content"
+				  			  			 android:layout_height="60dip"
+				  			  			 android:paddingLeft="0dip"
+				  			  			 android:layout_gravity="left"/>
+				  			  <TextView android:id="@+id/history_text1"
+				  			  			android:text="History"
+				  			  			android:layout_width="fill_parent"
+				  			  			android:layout_height="60dip"
+				  			  			android:textColor="#FFFFFF"
+				  			  			android:textStyle="bold"
+				  			  			android:textSize="30sp"
+				  			  			android:gravity="center_vertical"
+				  			  			android:paddingLeft="23px"
+				  			  			android:layout_toRightOf="@id/top_virgin_history1"/>
+				  			  			
+  			  </RelativeLayout>
+  			  
+  			   
+  			  <LinearLayout android:orientation="vertical"
+		    			    android:layout_width="fill_parent"
+		    			    
+		    			    android:layout_height="fill_parent">
+		                    
+					      	<ImageView android:id="@+id/show_history_button1"
+							        android:layout_width="wrap_content" 
+							        android:layout_height="wrap_content"
+							        android:layout_marginBottom="5px"
+							        android:src="@drawable/show_history"/>
+
+				<prayer.request.TransparentPanel
+						android:id="@+id/popup_window1" 
+			    	    android:layout_width="fill_parent"
+			        	android:layout_height="wrap_content"
+			        	android:orientation="vertical"
+			        	android:gravity="left"
+			        	android:padding="1px"
+			        	android:background="#FFFFFF">
+				
+					<RelativeLayout	android:orientation="vertical"
+						        	android:gravity="right"
+								    android:layout_width="fill_parent"
+								    android:layout_height="wrap_content"
+								    android:background="@drawable/button_bar_gradient">
+						
+						<Button android:id="@+id/hide_popup_button1"
+						        android:layout_width="wrap_content" 
+						        android:layout_height="wrap_content"
+				    			android:layout_alignParentRight="true"
+						        android:layout_marginTop="5px"
+				    			android:layout_marginRight="10px"
+				    			android:paddingLeft="5px"
+						        android:paddingRight="5px"
+				    			style="?android:attr/buttonStyleSmall"
+						        android:textStyle="bold"
+						        android:textColor="#FFFFFF"
+						        android:textSize="12px"
+						        android:text="Close"
+						        android:background="@drawable/button_black_rounded_out"/>
+			        	
+						<LinearLayout	android:orientation="vertical"
+						    	    	android:layout_width="fill_parent"
+								    	android:layout_height="1px"
+							        	android:layout_marginTop="5px"
+							        	android:layout_below="@+id/hide_popup_button1"
+								    	android:background="#FFFFFF"/>
+								    	<TextView android:id="@+id/location_name1"
+										        android:layout_width="wrap_content" 
+										        android:layout_height="wrap_content"
+								        		android:textStyle="bold"
+								        		android:textSize="10px"
+								        		android:textColor="#FFFFFF"
+								        		android:layout_marginTop="3px"
+								        		android:layout_marginLeft="3px"/>
+					</RelativeLayout>
+					
+			        
+			        
+				    <TextView	android:id="@+id/location_description2"
+						        android:layout_width="wrap_content" 
+						        android:layout_height="wrap_content"
+								android:textColor="#FFFFFF"
+				        		android:layout_margin="1px"/>
+			        <ImageView android:id="@+id/history_back"
+			        		   android:layout_width="wrap_content" 
+						       android:layout_height="wrap_content"
+						       android:layout_margin="0px"
+						       android:src="@drawable/back"
+						       android:layout_gravity="right"/>
+						       
+				  
+				</prayer.request.TransparentPanel>	  
+		      	 	
+		      	 	
+		      	 	
+		      </LinearLayout>
+		      
+</LinearLayout>

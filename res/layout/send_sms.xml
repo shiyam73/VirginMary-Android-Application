@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  			  android:layout_width="fill_parent"
+  			  android:layout_height="fill_parent"
+  			  android:orientation="vertical"
+  			  android:background="#FFFFFF">
+  			  <FrameLayout android:layout_width="fill_parent"
+			  			   android:layout_height="wrap_content"
+			  			   android:background="#000000">
+				  		   <LinearLayout android:layout_width="fill_parent"
+				  						 android:layout_height="wrap_content">
+				  			  				  <ImageView android:id="@+id/top_virgin_basilca"
+								  			  			 android:src="@drawable/peti"
+								  			  			 android:layout_width="wrap_content"
+								  			  			 android:layout_height="wrap_content"
+								  			  			 android:paddingLeft="0dip"
+								  			  			 android:layout_gravity="left"/>
+								  			  <TextView android:id="@+id/audio_text"
+								  			  			android:text="Petition"
+								  			  			android:layout_width="fill_parent"
+								  			  			android:layout_height="wrap_content"
+								  			  			android:textColor="#FFFFFF"
+								  			  			android:textStyle="bold"
+								  			  			android:textSize="30sp"
+								  			  			android:gravity="center"
+								  			  			android:paddingTop="3dip"
+								  			  			android:paddingLeft="23px"
+								  			  			android:layout_toRightOf="@id/top_virgin_basilca"/>
+						   </LinearLayout>
+			  </FrameLayout>
+			  
+			  <ScrollView android:layout_width="fill_parent"
+		    			  android:layout_height="fill_parent">
+			  			  <LinearLayout android:orientation="vertical"
+					    			    android:layout_width="fill_parent"
+					    			    
+					    			    android:layout_height="fill_parent">
+					                    
+								      	<ImageView android:id="@+id/show_history_button1"
+										        android:layout_width="wrap_content" 
+										        android:layout_height="wrap_content"
+										        android:paddingTop="20dip"
+										        android:layout_gravity="center"
+										        android:layout_marginBottom="5px"
+										        android:src="@drawable/cand"/>
+										<TextView android:id="@+id/message_textview"
+												  android:layout_width="wrap_content"
+												  android:layout_height="wrap_content"
+												  android:text="Message : "
+												  android:textSize="20sp"
+												  android:textColor="#800080"/>
+												  
+										<EditText android:id="@+id/prayer_msg"
+										 		  android:lines="4"
+										 		  android:layout_height="wrap_content"
+												  android:layout_width="fill_parent"/>
+										<ImageView android:id="@+id/send_petition"
+												   android:src="@drawable/send"
+												   android:layout_width="wrap_content"
+												   android:layout_height="wrap_content"
+												   android:layout_gravity="center"/>
+						  </LinearLayout>
+			  </ScrollView>
+</LinearLayout>

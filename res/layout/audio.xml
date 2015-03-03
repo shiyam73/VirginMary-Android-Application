@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  			  android:layout_width="fill_parent"
+  			  android:layout_height="fill_parent"
+  			  android:orientation="vertical"
+  			  android:background="@drawable/audio_background">
+  			  <FrameLayout android:layout_width="fill_parent"
+			  			   android:layout_height="wrap_content"
+			  			   android:background="#000000">
+				  		   <LinearLayout android:layout_width="fill_parent"
+				  						 android:layout_height="wrap_content">
+				  			  				  <ImageView android:id="@+id/top_virgin_basilca"
+								  			  			 android:src="@drawable/peti"
+								  			  			 android:layout_width="wrap_content"
+								  			  			 android:layout_height="wrap_content"
+								  			  			 android:paddingLeft="0dip"
+								  			  			 android:layout_gravity="left"/>
+								  			  <TextView android:id="@+id/audio_text"
+								  			  			android:text="Audio"
+								  			  			android:layout_width="fill_parent"
+								  			  			android:layout_height="wrap_content"
+								  			  			android:textColor="#FFFFFF"
+								  			  			android:textStyle="bold"
+								  			  			android:textSize="30sp"
+								  			  			android:gravity="center"
+								  			  			android:paddingTop="3dip"
+								  			  			android:paddingLeft="23px"
+								  			  			android:layout_toRightOf="@id/top_virgin_basilca"/>
+						   </LinearLayout>
+			  </FrameLayout>
+  			   
+  			  <ScrollView android:layout_width="fill_parent"
+		    			  android:layout_height="fill_parent">
+			  			  <LinearLayout android:orientation="vertical"
+					    			    android:layout_width="fill_parent"
+					    			    android:paddingTop="20dip"
+					    			    android:layout_height="fill_parent">
+					                    <TableLayout android:layout_height="wrap_content"
+												     android:layout_width="wrap_content"
+									  		         
+										             android:stretchColumns="*">
+										             <TableRow android:layout_width="fill_parent"
+										             		   android:layout_height="fill_parent"
+										             		   android:paddingTop="20dip"
+										             		   android:paddingBottom="20dip">
+										             	<TextView android:id="@+id/ave_maria_mp3"
+										             			  android:text="Ave Maria Mp3"
+										             			  android:textStyle="bold"
+										             			  android:textSize="30sp"
+										             			  android:textColor="#151B8D"
+										             			  android:gravity="center"
+										             			  android:layout_width="wrap_content"
+										             			  android:layout_height="wrap_content"/>
+										             	
+										             </TableRow>
+										             <TableRow android:layout_width="fill_parent"
+										             		   android:layout_height="fill_parent"
+										             		   android:paddingTop="20dip"
+										             		   android:paddingBottom="20dip">
+										             		   
+										             		    <TextView android:id="@+id/san_rosario_mp3"
+												             			  android:text="Santo Rosario"
+												             			  android:textColor="#151B8D"
+												             			  android:textStyle="bold"
+										             			 		  android:textSize="30sp"
+												             			  android:gravity="center"
+												             			  android:layout_width="wrap_content"
+												             			  android:layout_height="wrap_content"/>
+										             </TableRow>
+										             <TableRow android:layout_width="fill_parent"
+										             		   android:layout_height="fill_parent"
+										             		   android:paddingTop="20dip"
+										             		   android:paddingBottom="20dip">
+										             		   
+										             		    <TextView android:id="@+id/devotional_mp3"
+												             			  android:text="Devotionals"
+												             			  android:textColor="#151B8D"
+												             			  android:textStyle="bold"
+										             			 		  android:textSize="30sp"
+												             			  android:gravity="center"
+												             			  android:layout_width="wrap_content"
+												             			  android:layout_height="wrap_content"/>
+										             </TableRow>
+									    </TableLayout>
+					     </LinearLayout>
+		     </ScrollView>
+</LinearLayout>
